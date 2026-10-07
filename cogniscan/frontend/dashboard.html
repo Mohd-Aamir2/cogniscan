@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cogniscan — Dashboard</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/games.css">
+</head><body><div class="app">
+<p class="center small"><a href="dashboard.html">Dashboard</a> · <a href="history.html">History</a> · <a href="progress.html">Progress</a> · <a href="#" onclick="logout()">Logout</a></p>
+
+<div class="hero">
+  <div class="hero-text"><span class="hero-tag">🧠 Cogniscan</span><h1 id="hello">Hello 👋</h1><p>Track your memory, attention and reaction over time.</p></div>
+  <a class="hero-btn" href="assessment.html">▶ Start Assessment</a>
+</div>
+
+<div class="stats3">
+  <div class="stat"><span class="ico">📋</span><b id="count">—</b>Assessments</div>
+  <div class="stat"><span class="ico">🎯</span><b id="latest">—</b>Latest score</div>
+  <div class="stat"><span class="ico">📈</span><b id="change">—</b>Since last test</div>
+</div>
+
+<div class="card">
+  <h2>Latest domain scores</h2>
+  <div class="metric"><div class="metric-head"><b>🧠 Memory</b><span id="v_memory">—</span></div><div class="track"><div id="b_memory" class="fill" style="width:0"></div></div></div>
+  <div class="metric"><div class="metric-head"><b>👁️ Attention</b><span id="v_attention">—</span></div><div class="track"><div id="b_attention" class="fill" style="width:0"></div></div></div>
+  <div class="metric"><div class="metric-head"><b>⚡ Reaction</b><span id="v_reaction">—</span></div><div class="track"><div id="b_reaction" class="fill" style="width:0"></div></div></div>
+  <div class="metric"><div class="metric-head"><b>🧩 Pattern</b><span id="v_pattern">—</span></div><div class="track"><div id="b_pattern" class="fill" style="width:0"></div></div></div>
+</div>
+
+<div class="actions">
+  <a class="action" href="progress.html"><span class="ico">📊</span><b>Progress</b><small>Score graph & trend</small></a>
+  <a class="action" href="history.html"><span class="ico">🗂️</span><b>History</b><small>All past assessments</small></a>
+</div>
+
+<p class="small center" style="margin-top:22px">Not a diagnostic device. Results are for screening and demonstration only.</p>
+<footer>Cogniscan prototype • For education and demonstration</footer></div>
+<script src="js/auth.js"></script><script src="js/dashboard.js"></script></body></html>

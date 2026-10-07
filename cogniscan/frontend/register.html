@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cogniscan — Register</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/games.css">
+</head><body><div class="app">
+<div class="card"><h1>Create Account</h1><form id="registerForm">
+<label>Name</label><input name="name" required><label>Email</label><input name="email" type="email" required>
+<label>Password (min 6)</label><input name="password" type="password" minlength="6" required>
+<label>Age</label><input name="age" type="number" min="1" max="120" required>
+<label>Education</label><select name="education"><option>School</option><option selected>Graduate</option><option>Postgraduate</option><option>Other</option></select>
+<label>Language</label><select name="language"><option>English</option><option>Hindi</option></select>
+<div id="err" class="error"></div><button>REGISTER</button></form><p class="small center">Already registered? <a href="login.html">Login</a></p></div>
+<footer>Cogniscan prototype • Not a diagnostic device • For education and demonstration</footer></div><script src="js/auth.js"></script></body></html>

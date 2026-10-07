@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cogniscan — Progress</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/games.css">
+</head><body><div class="app">
+<p class="center small"><a href="dashboard.html">Dashboard</a> · <a href="history.html">History</a> · <a href="progress.html">Progress</a> · <a href="#" onclick="logout()">Logout</a></p>
+
+<div class="hero">
+  <div class="hero-text"><span class="hero-tag">📊 Progress</span><h1>Cognitive Performance</h1><p>See how your scores change across assessments.</p></div>
+</div>
+
+<div id="empty" class="card center hidden">
+  <div style="font-size:48px">📭</div><h2>No assessments yet</h2>
+  <p class="small">Take your first assessment to start tracking progress.</p>
+  <a class="btn" href="assessment.html">START ASSESSMENT</a>
+</div>
+
+<div id="content" class="hidden">
+  <div class="stats3">
+    <div class="stat"><span class="ico">🏆</span><b id="best">—</b>Best score</div>
+    <div class="stat"><span class="ico">📐</span><b id="avg">—</b>Average</div>
+    <div class="stat"><span class="ico">📈</span><b id="delta">—</b>Overall change</div>
+  </div>
+
+  <div class="card"><h2>Score over time</h2><div class="chart-wrap"><canvas id="chart"></canvas></div>
+    <p class="small center">Tip: tap a name in the legend to hide or show a line.</p></div>
+
+  <div class="card"><h2>Domain changes</h2><div id="chips" class="chips"></div></div>
+
+  <div id="insight" class="insight"><b id="insightTitle">Trend</b><p id="trend"></p></div>
+</div>
+
+<p class="small center" style="margin-top:22px">Not a diagnostic device. This is a screening observation only.</p>
+<footer>Cogniscan prototype • For education and demonstration</footer></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script><script src="js/auth.js"></script><script src="js/progress.js"></script></body></html>

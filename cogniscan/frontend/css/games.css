@@ -1,0 +1,6 @@
+.progress{height:7px;background:#e7ebf2;border-radius:10px;margin:10px 0 24px}.bar{height:100%;background:#243b7a;border-radius:10px;transition:width .4s}
+.words{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:25px 0}.word{padding:12px 16px;background:#eef2ff;border-radius:12px;font-weight:700}
+.options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.option{background:#f2f4f8;color:#172033}.option.selected{background:#dce5ff;outline:2px solid #243b7a}
+.tap{height:180px;border-radius:20px;background:#eef2f6;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:800;margin:20px 0;user-select:none;cursor:pointer;text-align:center}
+.tap.go{background:#dff6e7;color:#126b39}.tap.early{background:#fde4e4;color:#a12626}
+.seq{font-size:34px;font-weight:800;text-align:center;letter-spacing:6px;margin:24px 0}
